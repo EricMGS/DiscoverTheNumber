@@ -71,18 +71,20 @@ image = Image.open('interrogation.png')
 photo_image = ImageTk.PhotoImage(image)
 
 #Label
+fonte = ('impact', 10)
+
 lbl_image = Label (image = photo_image, width = 300, height = 300) #background image
 lbl_image.place (relx = 0.5, rely = 0.5, anchor = CENTER)
 
-lbl_tentatives = Label (font = 'impact', bg = mycolor)
+lbl_tentatives = Label (font = fonte, bg = mycolor)
 lbl_tentatives.configure (text = 'Tentatives: ' + str(tentatives))
 lbl_tentatives.place(relx = 0.02, rely = 0.08)
 
-lbl_tip = Label(text = 'Discover the number between ' + str(smaller) + ' and ' + str(bigger), bg = mycolor, font = 'impact') 
+lbl_tip = Label(text = 'Discover the number between ' + str(smaller) + ' and ' + str(bigger), bg = mycolor, font = fonte) 
 lbl_tip.place (relx = 0.5, rely = 0.05, anchor = CENTER)
 
 #Entry
-ent_value = Entry(width = 10, justify = 'center', font = 'impact')
+ent_value = Entry(width = 10, justify = 'center', font = fonte)
 ent_value.place (relx = 0.5, rely = 0.5, anchor = CENTER)
 
 #Button
