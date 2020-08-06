@@ -4,6 +4,8 @@
 ![Imagem do projeto](https://raw.githubusercontent.com/EricMGS/DiscoverTheNumber/master/image.png)   
    
 ## Dependencies  
+- python 3  
+`sudo apt install python3`  
 - tkinter   
 `sudo apt install python3-tk`  
 - PIL   
